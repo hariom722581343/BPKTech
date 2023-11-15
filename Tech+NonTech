@@ -1,0 +1,88 @@
+• Write briefly which subject in your bachelor's or master's degree did you like the most? and why?
+I am passionate about computer science and programming, and I have developed a strong foundation in various programming languages, including HTML, CSS, Java, JavaScript, SQL, C++, and Python. This diverse skill set has enabled me to tackle a wide range of programming projects.
+During my time at Masai School, I gained comprehensive knowledge of various programming languages, including HTML, CSS, Java, JavaScript, SQL, C++, and Python. This rigorous training equipped me with the skills and expertise to tackle a wide range of programming challenges.
+
+
+
+• What additional things have you done in that subject outside of learning and scoring good marks in that subject?
+My passion for programming extends beyond the classroom, driving me to seek opportunities to expand my knowledge and apply my skills in real-world scenarios. I've actively participated in web development hackathons, where I've collaborated with fellow developers to create innovative and functional web applications. Additionally, I maintain personal programming projects, constantly experimenting with new concepts and techniques to enhance my expertise and explore the vast potential of programming languages.
+
+
+
+• Have you learnt anything new in the last 6 months? If so, how did you go about learning it?
+o Anything - technical
+o Anything non-technical: art, sport, cooking etc.
+Technical Learning:->
+While the past six months have been physically challenging due to my bed rest, I've been intellectually invigorated by my studies at Masai School. The rigorous curriculum has introduced me to a plethora of new programming concepts, expanding my skill set and deepening my understanding of the ever-evolving technological landscape.
+
+Non-Technical Learning:->
+In addition to my technical pursuits, I've embarked on a journey of self-discovery, exploring the art of staying happy and positive amidst challenging circumstances. Through mindfulness practices and positive affirmations, I've cultivated resilience and inner peace, enabling me to approach each day with a renewed sense of optimism and gratitude.
+• To check your English communication skills, write a passage on any one of the three topics mentioned below in 200 words
+o Your favorite travel destination and why do you think it is overrated or underrated?
+o Your favorite food/restaurant and how do you think you can make it famous across the globe.
+o Your favorite IPL team and why should they win this year?
+Favorite Travel Destination: Ujjain, Mahakaleshwar
+My favorite travel destination is Ujjain, Mahakaleshwar, a holy city in Madhya Pradesh, India. It is home to the Mahakaleshwar Temple, one of the 12 Jyotirlingas, the most sacred shrines dedicated to Lord Shiva. The temple's ancient architecture, serene atmosphere, and spiritual significance make it an unforgettable destination.
+Favorite Food: Dal-Bati 
+My favorite food is dal-bati. It consists of dal-bati.The combination of flavors and textures is simply irresistible.
+Favorite IPL Player: MS Dhoni
+I don't have a favorite IPL team, but I admire MS Dhoni, the legendary wicketkeeper-batsman. His calm demeanor, strategic leadership, and ability to finish matches make him an inspiration to many.
+
+
+
+
+
+
+
+
+
+
+Since the job requires excellent database knowledge and algorithm skill, please complete the following task.
+• For a school, I would like to store the marks for all the students of grade 1 to 8 for all the subjects they study.
+o Design a table structure to store the student marks in all subjects.
+CREATE TABLE student_marks (
+  student_id INT PRIMARY KEY NOT NULL,
+  subject VARCHAR(255) NOT NULL,
+  marks INT NOT NULL,
+  grade INT NOT NULL
+);
+o Design a screen to add new student details (f.name, l.name, dob, parent's name, address, city, phone#) and show the list of students with this data in a table as and when it is created.
+Create a table to store student details:->
+CREATE TABLE students (student_id INT PRIMARY KEY,
+first_name VARCHAR(50) NOT NULL,
+last_name VARCHAR(50) NOT NULL,
+dob DATE NOT NULL,
+parent_name VARCHAR(100) NOT NULL,
+address VARCHAR(255) NOT NULL,
+city VARCHAR(50) NOT NULL,
+phone_number VARCHAR(20) NOT NULL,
+subject VARCHAR(50) NOT NULL,
+marks INT NOT NULL,
+grade VARCHAR(5) NOT NULL);
+display the list of students:->
+SELECT * FROM students;
+
+
+
+
+o Generate a report that will show all the students who have scored more than 60%.
+SELECT student_id, first_name, last_name, subject, marks, grade
+FROM student_marks
+WHERE marks > 60;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
